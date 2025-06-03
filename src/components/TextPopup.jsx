@@ -22,7 +22,7 @@ const TextPopup = ({ text, onClose, onSave, isEditing = false }) => {
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
       {/* Resizable container */}
       <div
-        className="resize overflow-auto bg-transparent p-1 rounded-lg cursor-nw-resize"
+        className="resize overflow-auto bg-transparent p-1 rounded-lg"
         style={{
           minWidth: '300px',
           minHeight: '300px',
@@ -30,6 +30,7 @@ const TextPopup = ({ text, onClose, onSave, isEditing = false }) => {
           maxHeight: '90vh',
           width: '600px',
           height: '500px',
+          cursor: 'se-resize'
         }}
       >
         <Card className="bg-slate-800 border-slate-700 w-full h-full flex flex-col">
